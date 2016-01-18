@@ -4,5 +4,7 @@ var factorIt = function(entryNum) {
     return -1;
   } else if ( entryNum === 0 ) {
     return 1;
+  } else if ( entryNum > 0 ) {
+    return (entryNum * factorIt(entryNum - 1));
   }
 };
